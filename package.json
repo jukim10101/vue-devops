@@ -2,15 +2,15 @@
   "name": "vue-devops",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://jukim10101.github.io/vue-devops",
+  "homepage": "https://jukim10101.github.io/vue-devops",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
-    "predeploy":"vue-cli-service build",
-    "deploy":"gh-pages -d dist",
-    "clean":"gh-pages-clean"
+    "predeploy": "vue-cli-service build",
+    "deploy": "gh-pages -d dist",
+    "clean": "gh-pages-clean"
   },
   "dependencies": {
     "core-js": "^3.6.5",
