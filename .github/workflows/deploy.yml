@@ -40,6 +40,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+jobs:
   deploy:
     runs-on: ubuntu-latest
 
@@ -53,10 +54,14 @@ jobs:
           node-version: 14.x
 
       - name: Install dependencies
-        run: npm install
+        run: yarn install
+
+      #install, build 사이에 단위 테스트 step을 추가
+      - name: Test unit
+        run: yarn test:unit
 
       - name: Build page
-        run: npm build
+        run: yarn build
         env:
           NODE_ENV: production
 
